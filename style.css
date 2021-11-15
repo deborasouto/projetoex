@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    width: -webkit-fill-available;
+}
+
+header {
+    background: linear-gradient(45deg, transparent, #6e6eb1);
+    padding: 15px;
+}  
+
+.menu  a {
+    text-decoration: none;
+    margin: 5px;
+    font-family: sans-serif;
+    color: rgb(239, 236, 247);
+    font-weight: bold;
+    cursor: pointer;
+    border: rgb(173, 173, 175);
+
+
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(49, 48, 139);
+}
