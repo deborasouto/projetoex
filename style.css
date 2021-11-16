@@ -1,3 +1,8 @@
+body {
+    font-family: sans-serif;
+    margin: 0px;
+}
+
 .header {
     display: flex;
     width: -webkit-fill-available;
@@ -11,12 +16,9 @@ header {
 .menu  a {
     text-decoration: none;
     margin: 5px;
-    font-family: sans-serif;
     color: rgb(239, 236, 247);
     font-weight: bold;
     cursor: pointer;
-    border: rgb(173, 173, 175);
-
 
 }
 
@@ -24,4 +26,32 @@ header {
     display: flex;
     justify-content: center;
     background-color: rgb(49, 48, 139);
+}
+
+.tabela {
+    border: black;
+    width: 100%;
+    border-spacing: 0px;
+}
+
+.tabela tr:nth-child(1) {
+    vertical-align: auto;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.tabela tr td {
+    padding: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    
+}
+
+.xp-sim, .xp-nao {
+    cursor: pointer;
 }
