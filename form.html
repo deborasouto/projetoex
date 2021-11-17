@@ -3,6 +3,7 @@
         <title>
             Formul&aacute;rio exemplo
         </title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
@@ -17,35 +18,40 @@
                 Cadastrar
             </a>
         </section>
+
+
         <form class="form">
-            <div>
-                <label for="nome">Nome</label>
-                <input id="nome" type="text" required placeholder="escreva seu nome">
+            <div class="linha-formulario">
+            <label for="nome" class="label-grande">Nome:</label>
+                <input id="nome" type="text" required placeholder="digite seu nome">
             </div>
             
-            <div>
-                <label for="tel">Telefone</label>
-                <input id="tel" type="tel" required placeholder="digite seu número">
-            </div>
-            
-            <label>Experiência prévia</label>
-            <div>
-                <input id="xp-sim" type=radio required name="xp"/> 
-                <label for="xp-sim" class="xp-sim">
-                    Sim
-                </label>
+
+            <div class="linha-formulario">
+                <label for="tel" class="label-grande">Telefone:</label>
+                <input id="tel" type="text" required placeholder="digite seu número">
             </div>
 
-            <div>
-                <input id="xp-nao" type=radio required name="xp"/> 
-                <label for="xp-nao" class="xp-nao">
-                    Não
-                </label>
+
+            <div class="linha-formulario xp-line" style="display: flex;">
+
+                <label class="label-grande">Experiência prévia:</label>
+
+                <div>
+                    <input id="xp-sim" type=radio required name="xp"/> 
+                    <label for="xp-sim" class="xp-sim">
+                        Sim
+                    </label>                  
+                                        
+                    <input id="xp-nao" type=radio required name="xp"/> 
+                    <label for="xp-nao" class="xp-nao">
+                        Não
+                    </label> 
+                </div>
             </div>
-            
-            <div>
+
+
                 <input type="submit" value="salvar">
-            </div>
-            </form>
+        </form>
     </body>
 </html>

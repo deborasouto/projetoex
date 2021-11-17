@@ -3,6 +3,7 @@ body {
     margin: 0px;
 }
 
+/*cabeçalho e menu*/
 .header {
     display: flex;
     width: -webkit-fill-available;
@@ -45,13 +46,54 @@ header {
     padding: 5px;
 }
 
+/*aqui q o baguio fica loko*/
+
 .form {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
-    margin: 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form div {
+    margin-bottom: 5px;
+    width: 100%;
     
 }
 
-.xp-sim, .xp-nao {
+.form .label-grande {
+    width: 50%;
+    text-align: right;
+    display: inline-block;
+
+}
+
+.xp-line div {
+    display: inline-block; 
+    width: 40%;
+}
+    
+.xp-sim, .xp-nao, #xp-sim, #xp-nao {
     cursor: pointer;
+}
+@media screen and (max-width:419px) {
+    .form input[type="text"] {
+        width: 100%;
+    }
+    .form .label-grande {
+        width: 100%;
+        text-align: center;
+    }
+    .xp-line {
+        flex-direction: column;
+
+    }
+    .xp-line div {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
 }
